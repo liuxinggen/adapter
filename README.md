@@ -1,4 +1,21 @@
 # 针对RecyclerView的一个万能Adapter,集成了单击、长按等点击事件。
+
+### Step 1. Add it in your root build.gradle at the end of repositories:
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ ```
+### Step 2. Add the dependency
+```
+	dependencies {
+	        compile 'com.github.liuxinggen:adapter:1.0'
+	}
+ ```
+
 # 单一布局使用方法
 ```java
  SingleAdapter<SingleBean> adapter = new SingleAdapter<SingleBean>
