@@ -18,8 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.lxg.base.adapter.utils.SingleActivity" />
-        <activity android:name="com.lxg.base.adapter.utils.MultitemTyleActivity"></activity>
+        <activity android:name="com.lxg.base.adapter.utils.single.SingleActivity" />
+        <activity android:name="com.lxg.base.adapter.utils.multitem.MultitemTyleActivity"></activity>
     </application>
 
 </manifest>

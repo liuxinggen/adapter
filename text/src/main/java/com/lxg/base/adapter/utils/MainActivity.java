@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.lxg.base.adapter.SingleAdapter;
 import com.lxg.base.adapter.ViewHolder;
+import com.lxg.base.adapter.utils.multitem.MultitemTyleActivity;
+import com.lxg.base.adapter.utils.single.SingleActivity;
 
 import java.util.ArrayList;
 import java.util.List;

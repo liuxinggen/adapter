@@ -1,4 +1,4 @@
-package com.lxg.base.adapter.utils;
+package com.lxg.base.adapter.utils.single;
 
 /**
  * 类名：com.lxg.base.adapter.myapplication

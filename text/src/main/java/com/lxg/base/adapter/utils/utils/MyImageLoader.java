@@ -1,4 +1,4 @@
-package com.lxg.base.adapter.utils;
+package com.lxg.base.adapter.utils.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -10,6 +10,7 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.lxg.base.adapter.utils.GlideApp;
 
 import static android.content.ContentValues.TAG;
 
