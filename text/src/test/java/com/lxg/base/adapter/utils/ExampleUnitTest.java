@@ -1,4 +1,4 @@
-package com.lxg.base.adapter.myapplication;
+package com.lxg.base.adapter.utils;
 
 import org.junit.Test;
 

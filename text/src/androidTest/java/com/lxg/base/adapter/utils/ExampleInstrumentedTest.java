@@ -1,4 +1,4 @@
-package com.lxg.base.adapter.myapplication;
+package com.lxg.base.adapter.utils;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -108,26 +108,26 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         return this;
     }
 
-    /**
-     * 为ImageView设置网络url 或者 文件path 图片
-     *
-     * @param viewId  View的id
-     * @param path    url或者 文件path
-     * @param errorId 错误图片id
-     * @param placeId 占位图片id
-     * @return
-     */
-    public ViewHolder setImageBUrlOrFile(int viewId, String path, int errorId, int placeId) {
-        ImageView imageView = getView(viewId);
+//    /**
+//     * 为ImageView设置网络url 或者 文件path 图片
+//     *
+//     * @param viewId  View的id
+//     * @param path    url或者 文件path
+//     * @param errorId 错误图片id
+//     * @param placeId 占位图片id
+//     * @return
+//     */
+//    public ViewHolder setImageBUrlOrFile(int viewId, String path, int errorId, int placeId) {
+//        ImageView imageView = getView(viewId);
 //        MyImageLoader.getInstance().displayImage(mContext,path,imageView,errorId,placeId);
-        return this;
-    }
-
-    public ViewHolder setImageNoPlace(int viewId, String path) {
-        ImageView imageView = getView(viewId);
+//        return this;
+//    }
+//
+//    public ViewHolder setImageNoPlace(int viewId, String path) {
+//        ImageView imageView = getView(viewId);
 //        MyImageLoader.getInstance().displayImage(mContext,path,imageView);
-        return this;
-    }
+//        return this;
+//    }
 
 
     public ViewHolder setBackgroundColor(int viewId, int color) {

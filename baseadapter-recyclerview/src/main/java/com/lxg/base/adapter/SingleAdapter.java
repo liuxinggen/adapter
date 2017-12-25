@@ -17,36 +17,36 @@ import java.util.List;
  * @author Liu_xg
  */
 
-public abstract class SingleAdapter<T> extends RecyclerView.Adapter<ViewHolder>{
+public abstract class SingleAdapter<T> extends RecyclerView.Adapter<ViewHolder> {
 
     protected Context mContext;
     protected int mLayoutId;
     protected List<T> mDatas;
 
-    public SingleAdapter(Context context, int layoutId, List<T> datas){
+    public SingleAdapter(Context context, int layoutId, List<T> datas) {
         mContext = context;
         mLayoutId = layoutId;
         mDatas = datas;
     }
 
     @Override
-    public int getItemCount(){
-        return mDatas==null?0:mDatas.size();
+    public int getItemCount() {
+        return mDatas == null ? 0 : mDatas.size();
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType){
+    public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
         //创建ViewHolder对象
         return ViewHolder.createViewHolder(mContext, parent, mLayoutId);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position){
+    public void onBindViewHolder(ViewHolder holder, int position) {
         //绑定数据交由子类来完成
-        convert(holder, mDatas.get(position));
+        convert(holder, mDatas.get(position), position);
     }
 
-    public abstract void convert(ViewHolder holder, T t);
+    public abstract void convert(ViewHolder holder, T t, int position);
 
     //以下是一些公共方法的封装
 
@@ -59,7 +59,7 @@ public abstract class SingleAdapter<T> extends RecyclerView.Adapter<ViewHolder>{
         mDatas.remove(position);
         notifyItemRemoved(position);
         if (position != mDatas.size())
-            notifyItemRangeChanged(position,mDatas.size() - position);
+            notifyItemRangeChanged(position, mDatas.size() - position);
     }
 
     public void addData(List<T> list) {
